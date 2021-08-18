@@ -33,7 +33,7 @@ public class Main {
 //        args = new String[]{"-l","192.168.10.221","3307","db_3","root","123456","d:/var","-","utf8","\u0007","\u0006"};
 //        args = new String[]{"-i","192.168.10.221","3307","db_2","root","123456","d:/var2","0","utf8"};
 //        args = new String[]{"-ll","localhost","3306","rtp_bus_db","root","123456","D:/project/2021/exit/bus","-","utf8","\u0007","\u0006", "192.168.10.210", "1080"};
-        args = new String[]{"-ll","10.238.25.109","10072","rtp_dw_db","root","evBKIA27vUap","D:\\workspace\\tools\\exportdb\\data","ra2","utf8","\u0007","\u0006", "192.168.10.210", "1080"};
+//        args = new String[]{"-ll","10.238.25.109","10072","rtp_dw_db","root","evBKIA27vUap","D:\\workspace\\tools\\exportdb\\data","ra2","utf8","\u0007","\u0006", "192.168.10.210", "1080"};
 
         if(args==null || args.length==0 || "-sql -lsql -e -le -l -ll -i -t".indexOf(args[0])==-1 ||
                 (args[0].equals("-e") && args.length!=11) ||
