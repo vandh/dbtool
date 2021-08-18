@@ -4,14 +4,14 @@
              copyright(2021.03.10-2021.08.06)           
   ------------------------------------------------------
 usage:
--sql [options]：导出数据到sql文件，表名|列号可以跳过，参数列表：
-[ip port dbname username passowrd filepath tablename charset]
-例1：导出表sys_config，跳过第1、2列，以utf8格式写入/data/sys_config.sql
-[-sql 10.238.25.109 10075 rtp_com_db  root *** /data/ sys_config|1,2 utf8]
-例2：导出rtp_com_db库中所有的表，排除t_,ap开头，_log,1结尾的表，以utf8格式写入/data/${table}.sql
-[-sql 10.238.25.109 10075 rtp_com_db  root *** /data/ -(t_*,test*,*_log,*1,*_bak) utf8]
-例3：导出rtp_com_db库中包含sys_,rtp_开头，_data结尾的表，以utf8格式写入/data/${table}.sql
-[-sql 10.238.25.109 10075 rtp_com_db  root *** /data/ +(sys_*,rtp_*,*_data) utf8]
+    -sql [options]：导出数据到sql文件，表名|列号可以跳过，参数列表：
+        [ip port dbname username passowrd filepath tablename charset]
+        例1：导出表sys_config，跳过第1、2列，以utf8格式写入/data/sys_config.sql
+        [-sql 10.238.25.109 10075 rtp_com_db  root *** /data/ sys_config|1,2 utf8]
+        例2：导出rtp_com_db库中所有的表，排除t_,ap开头，_log,1结尾的表，以utf8格式写入/data/${table}.sql
+        [-sql 10.238.25.109 10075 rtp_com_db  root *** /data/ -(t_*,test*,*_log,*1,*_bak) utf8]
+        例3：导出rtp_com_db库中包含sys_,rtp_开头，_data结尾的表，以utf8格式写入/data/${table}.sql
+        [-sql 10.238.25.109 10075 rtp_com_db  root *** /data/ +(sys_*,rtp_*,*_data) utf8]
 -lsql [options]：通过代理导出数据到sql文件，参数列表与用法参考 -sql：
 [ip port dbname username passowrd filepath tablename charset proxyHost proxyPort]
 -e [options]：导出数据到csv文件，参数列表：
